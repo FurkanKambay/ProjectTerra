@@ -120,8 +120,9 @@ namespace Tulip.Player
 
             // holding a tool
             Vector2 aimDirection = itemWielder.I.AimDirection.normalized;
-            topOrigin = hotspot + (Vector2.up * centerOffset);
-            bottomOrigin = hotspot - (Vector2.up * centerOffset);
+            Vector2 rightArrow = Vector3.Cross(aimDirection, Vector3.forward) * centerOffset;
+            topOrigin = hotspot + rightArrow;
+            bottomOrigin = hotspot - rightArrow;
 
             RaycastHit2D topHit = Physics2D.Raycast(topOrigin, aimDirection, range, LayerMask.GetMask("World"));
             RaycastHit2D bottomHit = Physics2D.Raycast(bottomOrigin, aimDirection, range, LayerMask.GetMask("World"));
@@ -148,7 +149,7 @@ namespace Tulip.Player
             Gizmos.color = Color.red;
             Gizmos.DrawRay(topOrigin, aimVector);
 
-            Gizmos.color = Color.blue;
+            Gizmos.color = Color.red;
             Gizmos.DrawRay(bottomOrigin, aimVector);
 
             Gizmos.color = Color.green;
