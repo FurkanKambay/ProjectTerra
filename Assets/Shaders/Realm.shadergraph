@@ -1722,8 +1722,8 @@
     "m_ObjectId": "01a0bb7fc04347d38a0f89f69bc8a0c9",
     "m_Title": "Portal Top",
     "m_Position": {
-        "x": -1415.9998779296875,
-        "y": 736.9999389648438
+        "x": -1592.0,
+        "y": 787.0
     }
 }
 
@@ -1846,7 +1846,7 @@
     "m_ObjectId": "04404167ee0e4050b2e0547932877466",
     "m_Title": "Portal Bottom",
     "m_Position": {
-        "x": -1416.0,
+        "x": -1592.0,
         "y": 1132.0
     }
 }
@@ -3185,7 +3185,7 @@
     "m_ObjectId": "2684558a481c4d6f814394bc8b8ded1b",
     "m_Title": "Curtain",
     "m_Position": {
-        "x": 194.99998474121095,
+        "x": 195.0,
         "y": 1231.0
     }
 }
@@ -3197,7 +3197,7 @@
     "m_Title": "Portal Viewing Side",
     "m_Position": {
         "x": -2060.0,
-        "y": 1085.9998779296875
+        "y": 1086.0
     }
 }
 
@@ -6172,7 +6172,7 @@
     "m_Title": "Direction - Player to Portal Bottom",
     "m_Position": {
         "x": -2546.0,
-        "y": 1236.9998779296875
+        "y": 1237.0
     }
 }
 
@@ -6567,7 +6567,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_SerializedTexture": "",
         "m_Guid": ""
     },
     "m_DefaultType": 0
@@ -8284,8 +8284,8 @@
     "m_ObjectId": "b6172629749340e6bc9d88d942a9c788",
     "m_Title": "Desaturate Inactive Realm",
     "m_Position": {
-        "x": 176.99996948242188,
-        "y": 766.9999389648438
+        "x": 177.0,
+        "y": 767.0
     }
 }
 
@@ -9399,7 +9399,7 @@
     "m_Title": "Direction - Fragment to Portal Top",
     "m_Position": {
         "x": -2807.0,
-        "y": 603.9999389648438
+        "y": 604.0
     }
 }
 
@@ -9861,8 +9861,8 @@
     "m_ObjectId": "e8b60508a4a04179b04983b29256f390",
     "m_Title": "Portal Plane",
     "m_Position": {
-        "x": -2176.000244140625,
-        "y": 1821.000244140625
+        "x": -2158.0,
+        "y": 1821.0
     }
 }
 
@@ -9928,7 +9928,7 @@
     "m_Title": "Direction - Portal Bottom to Fragment",
     "m_Position": {
         "x": -2774.0,
-        "y": 1445.999755859375
+        "y": 1446.0
     }
 }
 

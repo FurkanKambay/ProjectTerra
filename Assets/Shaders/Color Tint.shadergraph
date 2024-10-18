@@ -564,7 +564,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_SerializedTexture": "",
         "m_Guid": ""
     },
     "m_DefaultType": 0
@@ -849,7 +849,7 @@
     "m_StageCapability": 2,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"d6f21244c2865c14aacbbff443b80c70\",\"type\":3}}",
+        "m_SerializedTexture": "",
         "m_Guid": ""
     },
     "m_DefaultType": 0
@@ -1023,8 +1023,8 @@
     "m_ObjectId": "247a909f65464492b62458dd28260415",
     "m_Title": "Color Replace",
     "m_Position": {
-        "x": -789.9998168945313,
-        "y": 311.9999694824219
+        "x": -591.0000610351563,
+        "y": 312.0000305175781
     }
 }
 
@@ -1670,8 +1670,8 @@
     "m_ObjectId": "6bd7e1eb02794c858eba0b6a8dd21fdf",
     "m_Title": "Dissolve Effect",
     "m_Position": {
-        "x": -527.0104370117188,
-        "y": 715.0346069335938
+        "x": -526.9999389648438,
+        "y": 715.0000610351563
     }
 }
 
@@ -2410,8 +2410,8 @@
     "m_ObjectId": "ca3e275baab34a31a29014a7cd9a3f23",
     "m_Title": "Outline",
     "m_Position": {
-        "x": -1526.9998779296875,
-        "y": -333.15252685546877
+        "x": -1527.0,
+        "y": -333.0
     }
 }
 

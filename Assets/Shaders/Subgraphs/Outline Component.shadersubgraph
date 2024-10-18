@@ -609,8 +609,8 @@
     "m_ObjectId": "42ed1af1c00545e28973abd2b970f54f",
     "m_Title": "One Pixel in Direction",
     "m_Position": {
-        "x": -1415.0,
-        "y": -124.0
+        "x": -1415.0001220703125,
+        "y": -123.99998474121094
     }
 }
 
@@ -680,7 +680,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_SerializedTexture": "",
         "m_Guid": ""
     },
     "m_DefaultType": 0
@@ -705,7 +705,7 @@
     "m_ObjectId": "4f29f35e17774a63a7e3263546a7b43c",
     "m_Title": "Adjust UV",
     "m_Position": {
-        "x": -703.0,
+        "x": -703.0000610351563,
         "y": -253.0
     }
 }
@@ -1530,7 +1530,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_SerializedTexture": "",
         "m_Guid": ""
     },
     "m_DefaultType": 0

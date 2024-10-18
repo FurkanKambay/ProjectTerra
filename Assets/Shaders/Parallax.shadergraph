@@ -1491,7 +1491,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_SerializedTexture": "",
         "m_Guid": ""
     },
     "m_DefaultType": 0
@@ -1953,7 +1953,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_SerializedTexture": "",
         "m_Guid": ""
     },
     "isMainTexture": true,
@@ -2727,7 +2727,7 @@
     "m_ObjectId": "2d3124c9d8014fb49b364d58447eef11",
     "m_Title": "Cloud Movement",
     "m_Position": {
-        "x": -2066.000244140625,
+        "x": -2081.0,
         "y": -1770.0001220703125
     }
 }
@@ -3655,7 +3655,7 @@
     "m_ObjectId": "538d7724101f478486091e018127f7d4",
     "m_Title": "Scale",
     "m_Position": {
-        "x": -2081.000244140625,
+        "x": -2081.0,
         "y": -2110.000244140625
     }
 }
@@ -3672,7 +3672,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_SerializedTexture": "",
         "m_Guid": ""
     },
     "m_DefaultType": 0
@@ -5163,7 +5163,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_SerializedTexture": "",
         "m_Guid": ""
     },
     "m_DefaultType": 0
@@ -6158,7 +6158,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_SerializedTexture": "",
         "m_Guid": ""
     },
     "m_DefaultType": 0
@@ -7293,7 +7293,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_SerializedTexture": "",
         "m_Guid": ""
     },
     "m_DefaultType": 0
@@ -7520,7 +7520,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_SerializedTexture": "",
         "m_Guid": ""
     },
     "m_DefaultType": 0
@@ -7538,7 +7538,7 @@
     "m_StageCapability": 3,
     "m_BareResource": false,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_SerializedTexture": "",
         "m_Guid": ""
     },
     "m_DefaultType": 0
@@ -8038,8 +8038,8 @@
     "m_ObjectId": "ee9d38f1e8ab4c56915a9702ec5027cc",
     "m_Title": "Camera Movement",
     "m_Position": {
-        "x": -2699.000732421875,
-        "y": -709.0
+        "x": -2699.0,
+        "y": -709.0000610351563
     }
 }
 
