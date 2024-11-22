@@ -16,8 +16,8 @@ namespace Tulip.GameWorld
 
         [Header("Shader Properties")]
         [SerializeField, Required] EntityLocationDeterminer playerLocation;
-        [SerializeField, Required] Transform portalTop;
-        [SerializeField, Required] Transform portalBottom;
+        [SerializeField] Transform portalTop;
+        [SerializeField] Transform portalBottom;
 
         [Header("Config")]
         [SerializeField, Min(0)] float curtainRevealSpeed;
@@ -134,9 +134,14 @@ namespace Tulip.GameWorld
 
         private void SetProperties()
         {
-            propertyBlock.SetVector(ShaderParams.PortalCeiling, portalTop.position);
-            propertyBlock.SetVector(ShaderParams.PortalFloor, portalBottom.position);
-            propertyBlock.SetFloat(ShaderParams.Saturation, saturation);
+            if (portalTop && portalBottom)
+            {
+                // only update these if there's a portal
+                propertyBlock.SetVector(ShaderParams.PortalCeiling, portalTop.position);
+                propertyBlock.SetVector(ShaderParams.PortalFloor, portalBottom.position);
+                propertyBlock.SetFloat(ShaderParams.Saturation, saturation);
+            }
+
             propertyBlock.SetFloat(ShaderParams.RevealProgress, curtainRevealProgress);
 
             wallRenderer.SetPropertyBlock(propertyBlock);

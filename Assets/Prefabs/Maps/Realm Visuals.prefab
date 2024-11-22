@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9033445109699138156}
   - component: {fileID: 7871052133264414492}
   m_Layer: 0
-  m_Name: Realm - Active
+  m_Name: Realm Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
