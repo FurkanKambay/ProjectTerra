@@ -1,6 +1,6 @@
 <engine:UXML xmlns:engine="UnityEngine.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Styles/DeathOverlay.uss?fileID=7433441132597879392&amp;guid=2be3f91103d793a47a042165b3fcd7fe&amp;type=3#DeathOverlay" />
-    <engine:VisualElement data-source-type="Tulip.UI.DeathOverlayPresenter, Tulip.UI" name="Main">
+    <engine:VisualElement data-source-type="Tulip.UI.DeathOverlayPresenter, Tulip" name="Main">
         <engine:Label text="You are dead" name="DeathMessage" />
         <engine:VisualElement name="ReasonPanel">
             <engine:Label text="Reason:" name="ReasonTitle" />

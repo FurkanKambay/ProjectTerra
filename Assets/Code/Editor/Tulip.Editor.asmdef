@@ -3,11 +3,7 @@
     "rootNamespace": "Tulip",
     "references": [
         "GUID:ade22e0cbd0966a43aa01ef49b183800",
-        "GUID:a2b0e588887412244ba068aa99108de7",
-        "GUID:9b261077c7a2ac34886513ec1345f8e0",
-        "GUID:4cb23d4305e903d4cbe6b4d464c9f42d",
-        "GUID:89c31ed59bf64fe5816e91495d58c7a3",
-        "GUID:613783dc1674e844b87788ea74ede0f6"
+        "GUID:22d33592c0f45ed478791196a06db1d4"
     ],
     "includePlatforms": [
         "Editor"

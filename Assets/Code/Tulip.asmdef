@@ -1,7 +1,14 @@
 {
     "name": "Tulip",
     "rootNamespace": "Tulip",
-    "references": [],
+    "references": [
+        "GUID:ade22e0cbd0966a43aa01ef49b183800",
+        "GUID:613783dc1674e844b87788ea74ede0f6",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:0c752da273b17c547ae705acf0f2adf2",
+        "GUID:a2b0e588887412244ba068aa99108de7",
+        "GUID:9b261077c7a2ac34886513ec1345f8e0"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

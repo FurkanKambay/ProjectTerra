@@ -1,13 +1,13 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Styles/HotbarSlot.uss?fileID=7433441132597879392&amp;guid=b91d2fb014259ce46b0052909a5dfc72&amp;type=3#HotbarSlot" />
-    <ui:Button name="slot" data-source-type="Tulip.Data.ItemStack, Tulip.Data">
+    <ui:Button name="slot" data-source-type="Tulip.Data.ItemStack, Tulip">
         <ui:Image name="slot-icon">
             <Bindings>
                 <ui:DataBinding binding-mode="ToTarget" property="sprite" data-source-path="itemData.icon" />
                 <ui:DataBinding binding-mode="ToTarget" property="style.visibility" data-source-path="ShowIcon" />
                 <ui:DataBinding binding-mode="ToTarget" property="style.height" data-source-path="IconHeight" />
                 <ui:DataBinding binding-mode="ToTarget" property="style.opacity" data-source-path="IconOpacity" />
-                <ui:DataBinding binding-mode="ToTarget" property="tintColor" data-source-path="itemData.color" data-source-type="Tulip.Data.Items.PlaceableData, Tulip.Data" />
+                <ui:DataBinding binding-mode="ToTarget" property="tintColor" data-source-path="itemData.color" data-source-type="Tulip.Data.Items.PlaceableData, Tulip" />
             </Bindings>
         </ui:Image>
         <ui:Label name="slot-amount">

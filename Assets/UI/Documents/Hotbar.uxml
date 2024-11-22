@@ -1,7 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <ui:Template name="HotbarSlot" src="project://database/Assets/UI/Templates/HotbarSlot.uxml?fileID=9197481963319205126&amp;guid=0177eda6d9ac7864caa5afb35515f330&amp;type=3#HotbarSlot" />
     <Style src="project://database/Assets/UI/Styles/Hotbar.uss?fileID=7433441132597879392&amp;guid=35dca9aad35424341a464822cf25276a&amp;type=3#Hotbar" />
-    <ui:VisualElement name="hotbar-slots" data-source-type="Tulip.UI.HotbarPresenter, Tulip.UI">
+    <ui:VisualElement name="hotbar-slots" data-source-type="Tulip.UI.HotbarPresenter, Tulip">
         <ui:Instance template="HotbarSlot" name="slot-0" data-source-path="items[0]" class="selected" />
         <ui:Instance template="HotbarSlot" name="slot-1" data-source-path="items[1]" />
         <ui:Instance template="HotbarSlot" name="slot-2" data-source-path="items[2]" />
@@ -12,7 +12,7 @@
         <ui:Instance template="HotbarSlot" name="slot-7" data-source-path="items[7]" />
         <ui:Instance template="HotbarSlot" name="slot-8" data-source-path="items[8]" />
     </ui:VisualElement>
-    <ui:VisualElement name="hotbar-tooltip" data-source-type="Tulip.UI.HotbarPresenter, Tulip.UI">
+    <ui:VisualElement name="hotbar-tooltip" data-source-type="Tulip.UI.HotbarPresenter, Tulip">
         <ui:Label name="hotbar-tooltip-label" text="Item name">
             <Bindings>
                 <ui:DataBinding binding-mode="ToTarget" property="text" data-source-path="heldItem.itemData.name" />
