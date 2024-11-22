@@ -8,8 +8,7 @@ namespace Tulip.Core
     {
         MainMenu,
         Playing,
-        Paused,
-        Testing
+        Paused
     }
 
     public class GameManager : MonoBehaviour

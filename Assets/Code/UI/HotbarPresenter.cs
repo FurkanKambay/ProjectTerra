@@ -111,7 +111,7 @@ namespace Tulip.UI
 
         private void HandleGameStateChange(GameState oldState, GameState newState)
         {
-            document.enabled = newState is GameState.Playing or GameState.Testing;
+            document.enabled = newState is GameState.Playing;
 
             if (document.enabled)
             {
