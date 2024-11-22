@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Tulip.Core
 {
@@ -18,8 +19,6 @@ namespace Tulip.Core
         public static event GameStateChangeEvent OnGameStateChange;
 
         public static GameState CurrentState { get; private set; }
-        public static bool IsPlayerInputEnabled => CurrentState != GameState.Paused;
-        public static bool IsUIInputEnabled => CurrentState == GameState.MainMenu || !IsPlayerInputEnabled;
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         private static void Init() => CurrentState = GameState.MainMenu;
@@ -36,6 +35,7 @@ namespace Tulip.Core
             CurrentState = newState;
 
             UpdateTimeScale();
+            UpdateInputs();
             OnGameStateChange?.Invoke(oldState, newState);
         }
 
@@ -65,6 +65,23 @@ namespace Tulip.Core
             GameState.Paused when Settings.Gameplay.AllowPause => 0,
             _ => 1
         };
+
+        private static void UpdateInputs()
+        {
+            InputActionMap playerControls = InputSystem.actions.actionMaps[0];
+            InputActionMap uiControls = InputSystem.actions.actionMaps[1];
+
+            if (CurrentState == GameState.Playing)
+            {
+                playerControls.Enable();
+                uiControls.Disable();
+            }
+            else
+            {
+                playerControls.Disable();
+                uiControls.Enable();
+            }
+        }
 
         private static bool IsSafeToQuit()
         {
