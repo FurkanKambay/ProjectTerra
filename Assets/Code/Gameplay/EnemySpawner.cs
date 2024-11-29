@@ -31,25 +31,15 @@ namespace Tulip.Gameplay
         [OverlayRichLabel("<color=gray>sec")]
         [SerializeField, Min(0)] float gracePeriod;
 
-        [LayoutGroup("Config/Enemies", ELayout.TitleOut)]
-        [SerializeField] EntityData[] enemyOptions;
+        [SerializeField] EntitySpawnPoolData entitySpawnPoolData;
 
         private IEnumerable<Vector2Int> suitableCells;
 
         private bool isActive;
         private float timeSinceLastSpawn;
 
-        [Button]
-        private void DestroyAllSpawns()
-        {
-            for (int i = 0; i < spawnParent.childCount; i++)
-                Destroy(spawnParent.GetChild(i).gameObject);
-
-            world.ClearEntities();
-        }
-
-        private void OnEnable() => GameManager.OnGameStateChange += HandleGameStateChange;
-        private void OnDisable() => GameManager.OnGameStateChange -= HandleGameStateChange;
+        private void OnEnable() => GameManager.OnGameStateChange += Game_StateChanged;
+        private void OnDisable() => GameManager.OnGameStateChange -= Game_StateChanged;
 
         private void Update()
         {
@@ -68,7 +58,7 @@ namespace Tulip.Gameplay
                 timeSinceLastSpawn = 0;
         }
 
-        private void HandleGameStateChange(GameState oldState, GameState newState)
+        private void Game_StateChanged(GameState oldState, GameState newState)
         {
             isActive = newState != GameState.MainMenu;
 
@@ -81,7 +71,7 @@ namespace Tulip.Gameplay
             if (spawnParent.childCount >= maxSpawns)
                 return false;
 
-            if (enemyOptions.Length == 0)
+            if (entitySpawnPoolData.Amount == 0)
                 return false;
 
             EntityData entityData = GetRandomEnemy();
@@ -106,7 +96,7 @@ namespace Tulip.Gameplay
             Instantiate(prefab, position, Quaternion.identity, spawnParent).GetComponent<TangibleEntity>();
 
         private EntityData GetRandomEnemy() =>
-            enemyOptions[Random.Range(0, enemyOptions.Length)];
+            entitySpawnPoolData[Random.Range(0, entitySpawnPoolData.Amount)];
 
         private Vector2Int GetRandomSpawnCell() =>
             suitableCells.ElementAt(Random.Range(0, suitableCells.Count()));
@@ -141,14 +131,24 @@ namespace Tulip.Gameplay
         }
 
 #if UNITY_EDITOR
+
+        [Button, LayoutEnd]
+        private void DestroyAllSpawns()
+        {
+            for (int i = 0; i < spawnParent.childCount; i++)
+                Destroy(spawnParent.GetChild(i).gameObject);
+
+            world.ClearEntities();
+        }
+
         private void OnDrawGizmosSelected()
         {
-            if (enemyOptions.Length == 0)
+            if (entitySpawnPoolData.Amount == 0)
                 return;
 
             Handles.color = Color.yellow;
 
-            foreach (Vector2Int cell in GetSuitableCells(enemyOptions[0]))
+            foreach (Vector2Int cell in GetSuitableCells(entitySpawnPoolData[0]))
                 Handles.DrawSolidDisc(world.CellCenter(cell), Vector3.forward, 0.2f);
         }
 #endif
